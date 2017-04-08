@@ -33,6 +33,7 @@ var rd2 =  parseInt(die2.innerHTML);
             var num2 = parseInt(num);
             if( rd1 ==1 || rd2 == 1){
                 currentScore1.innerHTML = 0;
+                activePlayer = false;
             } else if(rd1 == 1 && rd2 == 1){
                 score1.innerHTML = 0;
                 currentScore1.innerHTML = 0;
@@ -47,6 +48,7 @@ var rd2 =  parseInt(die2.innerHTML);
             var num4 = parseInt(num3);
              if( rd1 == 1 || rd2 == 1){
                 currentScore2.innerHTML = 0;
+                activePlayer = true;
             } else if(rd1 == 1 && rd2 == 1){
                 score2.innerHTML = 0;
                 currentScore2.innerHTML = 0;
@@ -76,12 +78,14 @@ var rd2 =  parseInt(die2.innerHTML);
             score1.innerHTML = fs1;
             die1.innerHTML = 0;
             die2.innerHTML = 0;
+            currentScore1.innerHTML=0;
             activePlayer = false;
             
      } else{
         var finalScore2 = parseInt(score2.innerHTML);
             var fs2 = cs2 + finalScore2;
             score2.innerHTML = fs2;
+            currentScore2.innerHTML=0;
             die1.innerHTML = 0;
             die2.innerHTML = 0;
             activePlayer = true; 
