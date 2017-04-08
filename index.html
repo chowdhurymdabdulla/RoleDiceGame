@@ -16,7 +16,7 @@
         <div class="vertical" id="divplayer1">
             <div id="circle1"></div>
             <h1 id="player1">Player 1</h1>
-            <div id="score"></div>
+            <div id="score1" class="score">0</div>
             <p>CURRRENT SCORE</p>
             <div id="currentScore1">0</div>
         </div>
@@ -33,7 +33,7 @@
         <div class="vertical" id="divplayer2">
             <div id="circle2"></div>
             <h1 id="player1">Player 2</h1>
-            <div id="score"></div>
+            <div id="score2" class="score">0</div>
             <p>CURRRENT SCORE</p>
             <div id="currentScore2">0</div>
         </div>
@@ -42,39 +42,3 @@
 </body>
 
 </html>
-
-  <!--if(activePlayer){
-        if(rd1 || rd2 == "1"){
-            currentScore1.innerHTML = "0";
-            // activePlayer = false;
-        } else{
-        var diceTotal1 = rd1 + rd2;
-        var num = currentScore1.innerHTML
-        var num2 = parseInt(num);
-        var num2 = num2 + diceTotal1;
-        currentScore1.innerHTML = num2;
-        console.log(num2);
-        activePlayer = false;
-        }
-     } else {
-         if(rd1 || rd2 == 1){
-            currentScore2.innerHTML ="0";
-             activePlayer = true;
-        } else{
-        var diceTotal2 = rd1 + rd2;
-        var num3 = currentScore2.innerHTML
-        var num4 = parseInt(num3);
-        var num4 = num4 + diceTotal2;
-        currentScore2.innerHTML = num4;
-         activePlayer = true;
-        console.log(num4);
-        }
-       
-    }  
-     function result(){
-         if(num2>100 ||num4>100){
-             alert("winner");
-             location.reload();
-         }
-     }
-     result();-->
